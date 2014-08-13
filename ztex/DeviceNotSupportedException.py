@@ -15,16 +15,15 @@
 #  along with this program; if not, see http://www.gnu.org/licenses/.
 #  !
 # package: ztex
-import ch.ntb.usb
 
-# 
-#  * Thrown if a device is not supported, i.e. has the wrong USB ID's. 
+#
+#  * Thrown if a device is not supported, i.e. has the wrong USB ID's.
 class DeviceNotSupportedException(Exception):
     """ generated source for class DeviceNotSupportedException """
-    # 
+    #
     #      * Constructs an instance from the given device.
     #      * @param dev The device.
-    #      
+    #
     def __init__(self, dev):
         """ generated source for method __init__ """
         super(DeviceNotSupportedException, self).__init__("bus=" + dev.getBus().getDirname() + "  device=" + dev.getFilename() + ": Device not supported")
